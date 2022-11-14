@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+    <title>Frontend Mentor | News homepage</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img alt="logoforWebsite" src="assets/images/logo.svg" class="logo" />
+      </a>
+
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li>
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">New</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">Trending</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">Popular</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">Categories</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main class="hero-section grid">
+      <div class="image">
+        <img
+          src="assets/images/image-web-3-desktop.jpg"
+          class="image-hero"
+          alt="Image For News"
+        />
+      </div>
+      <div class="heading">
+        <h1 class="news-heading">The Bright Future of Web 3.0?</h1>
+      </div>
+      <div class="paragraph">
+        <div class="paraa">
+          <p>
+            We dive into the next evolution of web that claims to put the power
+            of the plataforms back into the hands of the people. But is it
+            really fullfilling its promise?
+          </p>
+        </div>
+
+        <div class="btn">
+          <a href="#" class="btnn">READ MORE</a>
+        </div>
+      </div>
+
+      <aside class="aside-main">
+        <div class="second-heading">
+          <h2>New</h2>
+        </div>
+
+        <ul>
+          <li class="list-item-aside border">
+            <a href="#" class="list-item-aside-head"
+              >Hydrogen VS Electric Cars</a
+            >
+            <p class="list-item-aside-para">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </li>
+
+          <li class="list-item-aside border">
+            <a href="#" class="list-item-aside-head"
+              >The Downsides of AI Artistry</a
+            >
+            <p class="list-item-aside-para">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </li>
+
+          <li class="list-item-aside">
+            <a href="#" class="list-item-aside-head"
+              >Is VC Funding Drying Up?</a
+            >
+            <p class="list-item-aside-para">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </li>
+        </ul>
+      </aside>
+    </main>
+
+    <section class="another-aside">
+      <div class="article-one gaaab">
+        <img
+          alt="article"
+          src="assets/images/image-retro-pcs.jpg"
+          class="article-img"
+        />
+        <div class="articleee">
+          <p class="head-number">01</p>
+          <div class="head-of-article">
+            <a href="#" class="head-of-article-link">Reviving Retro PCs</a>
+          </div>
+          <p class="words-from-article">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </div>
+
+      <div class="article-one gaaab">
+        <img
+          alt="article"
+          src="assets/images/image-top-laptops.jpg"
+          class="article-img"
+        />
+        <div class="articleee">
+          <p class="head-number">02</p>
+          <div class="head-of-article">
+            <a href="#" class="head-of-article-link">Top 10 Laptops of 2022</a>
+          </div>
+          <p class="words-from-article">
+            Our best picks for various needs and budgets.
+          </p>
+        </div>
+      </div>
+
+      <div class="article-one">
+        <img
+          alt="article"
+          src="assets/images/image-gaming-growth.jpg"
+          class="article-img"
+        />
+        <div class="articleee">
+          <p class="head-number">03</p>
+          <div class="head-of-article">
+            <a href="#" class="head-of-article-link">The Growth of Gaming</a>
+          </div>
+          <p class="words-from-article">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a
+        class="link-front"
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a class="link-front" href="#">Saad Hussein</a>.
+    </div>
+  </body>
+</html>
